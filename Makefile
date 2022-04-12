@@ -6,12 +6,12 @@
 
 .PHONY: build debug push test setup_pages
 
-VERSION ?= latest
+VERSION ?= old
 GIT_HASH := $(shell git log -1 --format='format:%H')
 GIT_DATE := $(shell git log -1 --format='format:%cs')
 GIT_DESCRIBE := $(shell git describe --tags --always --dirty)
 
-REGISTRY ?= askcos/askcos-core
+REGISTRY ?= fourthievesvinegar/askcos-core
 TAG ?= $(VERSION)
 DATA_VERSION ?= $(VERSION)
 
